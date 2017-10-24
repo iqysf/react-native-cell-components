@@ -11,7 +11,8 @@ import {
   Text,
   TouchableWithoutFeedback,
   TouchableOpacity,
-  StyleSheet
+  StyleSheet,
+  ViewPropTypes
 } from 'react-native';
 
 class TagsInput extends React.Component {
@@ -25,7 +26,7 @@ class TagsInput extends React.Component {
   }
 
   static propTypes = {
-    ...View.propTypes,
+    ...ViewPropTypes,
     tags: PropTypes.array,
     autoFocus: PropTypes.bool,
     onChangeText: PropTypes.func,
